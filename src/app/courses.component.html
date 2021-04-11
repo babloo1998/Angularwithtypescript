@@ -1,0 +1,17 @@
+<div class="wrapper">
+        <div *ngFor="let show of courses" class="property-card">
+          <a href="#">
+            <div class="property-image"  [style.background-image]="'url('+show._embedded.show.image.original+')'"  >  
+              <div class="property-image-title">
+              </div>
+            </div></a>
+          <div class="property-description">
+            <h5> {{ show.name }} </h5>
+            <p>{{show._embedded.show.summary}}</p>
+          </div>
+          <a href="#">
+            <div class="property-social-icons">
+            </div>
+          </a>
+        </div>
+</div>
